@@ -1,12 +1,13 @@
 
 
 $(document).ready( function() {
-    $('button').click(function(){
-       if($('body').addClass('black')) {
-       $(body).removeClass('black').addClass('white');
+    $('orb').click(function(){
+       if($('body').hasClass('sun')) {
+       $('body').removeClass('sun').addClass('moon');
     }
        else {
-            $('body').removeClass('white').addClass('black');
+            $('body').removeClass('moon').addClass('sun');
        }
     });
+    if ($('#sky').hasClass('day')) {}
 });
